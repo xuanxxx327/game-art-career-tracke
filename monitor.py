@@ -22,7 +22,7 @@ UA = "GameArtCareerTracker/0.2 (+personal research; public job board APIs)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA, "Accept": "application/json"})
 SESSION.mount("https://", HTTPAdapter(max_retries=Retry(total=2, connect=2, read=2, backoff_factor=0.8, status_forcelist=[429, 500, 502, 503, 504], allowed_methods=frozenset(["GET"]))))
-ART = re.compile(r"environment|world art|level art|level artist|prop artist|3d artist|3d art|3d model|material artist|texture artist|lighting artist|technical artist|场景|环境美术|地编|道具美术|模型师|材质|灯光美术|技术美术", re.I)
+ART = re.compile(r"environment(?:al)? art|environment artist|world art|level art|level artist|prop artist|3d artist|3d art|3d model|material artist|texture artist|lighting artist|technical artist|场景(?:美术|设计|建模|模型|制作|资产|艺术|编辑|搭建)|环境美术|地编|道具(?:美术|设计|建模|模型|制作)|模型师|三维建模|(?:材质|纹理)(?:美术|设计|制作|艺术|师)|灯光美术|技术美术", re.I)
 INTERNSHIP = re.compile(r"intern(ship)?|trainee|placement|实习|暑期实习", re.I)
 CAMPUS = re.compile(r"graduate|new grad|new graduate|entry.level|early career|campus|university grad|应届|校招|校园招聘|毕业生|管培", re.I)
 SENIOR = re.compile(r"senior|staff|principal|lead|director|manager|head of|高级|资深|专家|主管|负责人|总监", re.I)
@@ -328,7 +328,7 @@ def main():
     sources = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
     previous_path = DATA / "jobs.json"
     previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {"jobs": []}
-    previous_jobs = {j["id"]: j for j in previous.get("jobs", [])}
+    previous_jobs = {j["id"]: j for j in previous.get("jobs", []) if ART.search(j.get("title", "")) and not SENIOR.search(j.get("title", ""))}
     jobs = dict(previous_jobs)
     diagnostics = []
     success = 0
