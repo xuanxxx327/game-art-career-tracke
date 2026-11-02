@@ -279,66 +279,194 @@
     "Nihon Falcom": {
       "checked_at": "2026-11-02T17:03:00.507631+00:00",
       "result": "not_verifiable"
+    },
+    "PopCap Games": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Sega": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Respawn Entertainment": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "RedHot CG": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Sega China": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Shift Up": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Smilegate RPG": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Sperasoft": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Room 8 Studio": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "The Pokémon Company": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Spike Chunsoft": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Square Enix": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Abu Dhabi": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Annecy": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Sucker Punch Productions": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Barcelona": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Belgrade": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Berlin": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Düsseldorf": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Santa Monica Studio": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Bordeaux": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Bucharest": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Ivory Tower": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "PlayStation Studios": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Helsinki": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Mainz": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Montreal": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Montpellier": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Milan": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Mumbai": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Kyiv": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Halifax": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Nadeo": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Nagoya": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Chengdu": {
+      "checked_at": "2026-11-02T17:03:59.036008+00:00",
+      "result": "not_verifiable"
     }
   },
-  "checked_at": "2026-11-02T17:03:00.507631+00:00",
+  "checked_at": "2026-11-02T17:03:59.036008+00:00",
   "checked_this_run": 35,
   "new_verified_this_run": [
     {
-      "company": "Firesprite",
-      "source": "greenhouse",
-      "slug": "firesprite",
+      "company": "RedHot CG",
+      "source": "smartrecruiters",
+      "slug": "redhotcg",
       "verification": "public_board_title"
     },
     {
-      "company": "FunPlus",
+      "company": "Sperasoft",
       "source": "workable",
-      "slug": "funplus",
+      "slug": "sperasoft",
       "verification": "public_board_title"
     },
     {
-      "company": "Housemarque",
-      "source": "greenhouse",
-      "slug": "housemarque",
+      "company": "Square Enix",
+      "source": "ashby",
+      "slug": "square-enix",
       "verification": "public_board_title"
     },
     {
-      "company": "Grinding Gear Games",
-      "source": "workable",
-      "slug": "grinding-gear-games",
+      "company": "Sucker Punch Productions",
+      "source": "smartrecruiters",
+      "slug": "suckerpunchproductions",
       "verification": "public_board_title"
     },
     {
-      "company": "Guerrilla Games",
-      "source": "greenhouse",
-      "slug": "guerrilla-games",
+      "company": "Ubisoft Bordeaux",
+      "source": "smartrecruiters",
+      "slug": "ubisoftbordeaux",
       "verification": "public_board_title"
     },
     {
-      "company": "Naughty Dog",
-      "source": "greenhouse",
-      "slug": "naughtydog",
+      "company": "Ubisoft Ivory Tower",
+      "source": "smartrecruiters",
+      "slug": "ubisoftivorytower",
       "verification": "public_board_title"
     },
     {
-      "company": "Netmarble",
-      "source": "workable",
-      "slug": "netmarble",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Lakshya Digital",
-      "source": "workable",
-      "slug": "lakshyadigital",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Pearl Abyss",
-      "source": "workable",
-      "slug": "pearlabyss",
+      "company": "Ubisoft Montreal",
+      "source": "smartrecruiters",
+      "slug": "ubisoftmontreal",
       "verification": "public_board_title"
     }
   ],
   "watchlist_size": 241,
-  "configured_sources": 27
+  "configured_sources": 34
 }
