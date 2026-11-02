@@ -11,6 +11,8 @@ import sys
 from urllib.parse import urlparse
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
@@ -19,6 +21,7 @@ TIMEOUT = 18
 UA = "GameArtCareerTracker/0.2 (+personal research; public job board APIs)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA, "Accept": "application/json"})
+SESSION.mount("https://", HTTPAdapter(max_retries=Retry(total=2, connect=2, read=2, backoff_factor=0.8, status_forcelist=[429, 500, 502, 503, 504], allowed_methods=frozenset(["GET"]))))
 ART = re.compile(r"environment|world art|level art|level artist|prop artist|3d artist|3d art|3d model|material artist|texture artist|lighting artist|technical artist|场景|环境美术|地编|道具美术|模型师|材质|灯光美术|技术美术", re.I)
 INTERNSHIP = re.compile(r"intern(ship)?|trainee|placement|实习|暑期实习", re.I)
 CAMPUS = re.compile(r"graduate|new grad|new graduate|entry.level|early career|campus|university grad|应届|校招|校园招聘|毕业生|管培", re.I)
@@ -69,7 +72,7 @@ def smartrecruiters(source):
                 department=(j.get("department") or {}).get("label", ""),
                 employment_type=typ.get("label", "") if isinstance(typ, dict) else str(typ),
                 description="",
-                url=j.get("ref") or f"https://jobs.smartrecruiters.com/{slug}/{j.get('id', '')}",
+                url=f"https://jobs.smartrecruiters.com/{slug}/{j.get('id', '')}",
                 published_at=j.get("releasedDate"),
             )
         offset += len(batch)
