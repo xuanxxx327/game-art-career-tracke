@@ -16,6 +16,22 @@
     "priority": 1
   },
   {
+    "name": "Nex",
+    "group": "foreign_china_or_overseas",
+    "source": "greenhouse",
+    "slug": "nex",
+    "homepage": "https://job-boards.greenhouse.io/nex",
+    "priority": 2
+  },
+  {
+    "name": "Xsolla",
+    "group": "foreign_china_or_overseas",
+    "source": "lever",
+    "slug": "xsolla",
+    "homepage": "https://jobs.lever.co/xsolla",
+    "priority": 2
+  },
+  {
     "name": "Riot Games",
     "group": "foreign_china",
     "source": "links",
