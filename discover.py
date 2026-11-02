@@ -26,6 +26,8 @@ ATS = {
     "greenhouse": ("https://job-boards.greenhouse.io/{slug}", "job-boards.greenhouse.io"),
     "lever": ("https://jobs.lever.co/{slug}", "jobs.lever.co"),
     "ashby": ("https://jobs.ashbyhq.com/{slug}", "jobs.ashbyhq.com"),
+    "smartrecruiters": ("https://careers.smartrecruiters.com/{slug}", "careers.smartrecruiters.com"),
+    "workable": ("https://apply.workable.com/{slug}/", "apply.workable.com"),
 }
 # Avoid collisions with unrelated companies for short/ambiguous names.
 MIN_NAME_LENGTH = 7
