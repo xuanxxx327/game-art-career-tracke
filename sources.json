@@ -48,9 +48,10 @@
   {
     "name": "Ubisoft",
     "group": "foreign_china",
-    "source": "links",
-    "homepage": "https://www.ubisoft.com/en-us/company/careers",
-    "priority": 1
+    "source": "smartrecruiters",
+    "homepage": "https://jobs.smartrecruiters.com/ubisoft2",
+    "priority": 1,
+    "slug": "ubisoft2"
   },
   {
     "name": "Virtuos",
