@@ -26,7 +26,7 @@ ART = re.compile(r"environment|world art|level art|level artist|prop artist|3d a
 INTERNSHIP = re.compile(r"intern(ship)?|trainee|placement|实习|暑期实习", re.I)
 CAMPUS = re.compile(r"graduate|new grad|new graduate|entry.level|early career|campus|university grad|应届|校招|校园招聘|毕业生|管培", re.I)
 SENIOR = re.compile(r"senior|staff|principal|lead|director|manager|head of|高级|资深|专家|主管|负责人|总监", re.I)
-CHINA = re.compile(r"china|shanghai|beijing|guangzhou|shenzhen|chengdu|hangzhou|suzhou|wuhan|nanjing|中国|上海|北京|广州|深圳|成都|杭州|苏州|武汉|南京", re.I)
+CHINA = re.compile(r"china|shanghai|beijing|guangzhou|shenzhen|chengdu|hangzhou|suzhou|wuhan|nanjing|xian|chongqing|tianjin|xiamen|qingdao|hefei|changsha|fuzhou|ningbo|中国|上海|北京|广州|深圳|成都|杭州|苏州|武汉|南京|西安|重庆|天津|厦门|青岛|合肥|长沙|福州|宁波|珠海|佛山|东莞|无锡|昆山|沈阳|大连|济南|昆明|南昌|郑州|哈尔滨|合肥|海口", re.I)
 
 def clean(value):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(value or "")))).strip()
@@ -302,7 +302,7 @@ def normalize(source, job, now):
         return None
     ident = job.get("source_id") or url
     key = hashlib.sha256((source["name"] + ":" + str(ident)).encode()).hexdigest()[:24]
-    overseas = not CHINA.search(location)
+    overseas = False if source.get("source") == "tencent_campus" else not bool(CHINA.search(location))
     eligibility = "needs_verification" if overseas else "check_job_requirements"
     eligibility_notes = ""
     # Official Larian Ghent internship application currently limits candidates to
@@ -312,6 +312,7 @@ def normalize(source, job, now):
         eligibility_notes = "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。"
     return {
         "id": key, "company": source["name"], "group": source["group"],
+        "region": "overseas" if overseas else "china",
         "track": track, "title": title, "location": location or "未注明",
         "employment_type": employment, "department": department,
         "url": url, "published_at": job.get("published_at"),
