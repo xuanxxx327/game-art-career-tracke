@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T16:51:02.124299+00:00",
+  "checked_at": "2026-11-02T16:52:52.639438+00:00",
   "source_success_count": 5,
   "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
   "jobs": [
@@ -15,7 +15,7 @@
       "url": "https://jobs.lever.co/larian/55238820-92ef-4b4e-ba18-a9fdd027f737",
       "published_at": null,
       "first_seen": "2026-11-02T16:38:45.644877+00:00",
-      "last_seen": "2026-11-02T16:51:02.124299+00:00",
+      "last_seen": "2026-11-02T16:52:52.639438+00:00",
       "status": "open",
       "eligibility": "restricted_region",
       "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
@@ -32,10 +32,10 @@
       "location": "Bordeaux, Nouvelle-Aquitaine, fr",
       "employment_type": "Intern",
       "department": "Ubisoft",
-      "url": "https://api.smartrecruiters.com/v1/companies/ubisoft2/postings/744000155698619",
+      "url": "https://api.smartrecruiters.com/v1/companies/Ubisoft2/postings/744000155698619",
       "published_at": "2026-10-15T08:41:07.409Z",
       "first_seen": "2026-11-02T16:49:15.014313+00:00",
-      "last_seen": "2026-11-02T16:51:02.124299+00:00",
+      "last_seen": "2026-11-02T16:52:52.639438+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
