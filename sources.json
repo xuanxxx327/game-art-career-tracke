@@ -77,9 +77,11 @@
   {
     "name": "NetEase Games",
     "group": "domestic_major",
-    "source": "links",
-    "homepage": "https://game.campus.163.com/",
-    "priority": 1
+    "source": "greenhouse",
+    "homepage": "https://job-boards.greenhouse.io/neteasegames",
+    "priority": 1,
+    "slug": "neteasegames",
+    "verification": "public_board_title"
   },
   {
     "name": "miHoYo",
@@ -828,8 +830,11 @@
   {
     "name": "Digital Extremes",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "digitalextremes",
+    "homepage": "https://job-boards.greenhouse.io/digitalextremes",
+    "verification": "public_board_title"
   },
   {
     "name": "Warframe Studio",
@@ -1224,8 +1229,11 @@
   {
     "name": "Avalanche Studios",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "lever",
+    "priority": 3,
+    "slug": "avalanchestudios",
+    "homepage": "https://jobs.lever.co/avalanchestudios",
+    "verification": "public_board_title"
   },
   {
     "name": "Massive Entertainment",

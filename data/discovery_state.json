@@ -1,0 +1,168 @@
+{
+  "attempts": {
+    "Virtuos": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Electronic Arts": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "NetEase Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "verified"
+    },
+    "Embark Studios": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "miHoYo": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Tencent Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "4399游戏": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Passtech / Pathea Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Atlus": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Lilith Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Avalanche Studios": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "verified"
+    },
+    "Hypergryph": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Kuro Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bend Studio": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Papergames": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "BioWare": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bandai Namco Online": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bungie": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Capcom": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bluehole Studio": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Com2uS": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Behaviour Interactive": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bluepoint Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "CyberConnect2": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "DICE": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Digital Extremes": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "verified"
+    },
+    "Cygames": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Criterion Games": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Codemasters": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "EA Shanghai": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Bandai Namco Studios": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "Arrowhead Game Studios": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "EA Redwood Shores": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "EA Vancouver": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    },
+    "EA Korea": {
+      "checked_at": "2026-11-02T17:00:05.219633+00:00",
+      "result": "not_verifiable"
+    }
+  },
+  "checked_at": "2026-11-02T17:00:05.219633+00:00",
+  "checked_this_run": 35,
+  "new_verified_this_run": [
+    {
+      "company": "NetEase Games",
+      "source": "greenhouse",
+      "slug": "neteasegames",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Avalanche Studios",
+      "source": "lever",
+      "slug": "avalanchestudios",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Digital Extremes",
+      "source": "greenhouse",
+      "slug": "digitalextremes",
+      "verification": "public_board_title"
+    }
+  ],
+  "watchlist_size": 241,
+  "configured_sources": 18
+}
