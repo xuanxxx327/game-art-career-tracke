@@ -208,7 +208,74 @@ def riot(source):
                    employment_type="", description="", url=url,
                    published_at=None)
 
-FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby, "workable": workable, "recruitee": recruitee, "riot": riot}
+
+def tencent_campus(source):
+    """Tencent official student recruitment feed (join.qq.com public job search).
+    Every match comes from a campus or internship project, never social recruitment.
+    """
+    from time import time
+    projects = [1, 2, 12, 14, 20, 21]
+    internship_projects = {2, 12, 20}
+    campus_projects = {1, 14, 21}
+    keywords = ("场景", "地编", "道具", "模型", "材质", "美术", "关卡")
+    seen = set()
+    for keyword in keywords:
+        for page in range(1, 16):
+            body = {
+                "projectIdList": projects, "keyword": keyword,
+                "bgList": [], "workCountryType": 0,
+                "workCityList": [], "recruitCityList": [],
+                "positionFidList": [], "pageIndex": page, "pageSize": 100,
+            }
+            url = "https://join.qq.com/api/v1/position/searchPosition"
+            response = SESSION.post(
+                url, params={"timestamp": int(time() * 1000)}, json=body,
+                headers={"Referer": "https://join.qq.com/post.html",
+                         "Origin": "https://join.qq.com",
+                         "User-Agent": "Mozilla/5.0 (compatible; GameArtCareerTracker/0.7)"},
+                timeout=TIMEOUT,
+            )
+            response.raise_for_status()
+            raw = response.json()
+            if raw.get("status") != 0:
+                raise ValueError("Tencent campus API unsuccessful: " + str(raw.get("message"))[:150])
+            payload = raw.get("data") or {}
+            batch = payload.get("positionList") or []
+            if not isinstance(batch, list):
+                raise ValueError("Tencent campus positionList invalid")
+            for j in batch:
+                pid = j.get("projectId")
+                try:
+                    pid = int(pid)
+                except (TypeError, ValueError):
+                    continue
+                if pid in internship_projects:
+                    employment = "Internship"
+                elif pid in campus_projects:
+                    employment = "Campus Recruitment"
+                else:
+                    continue
+                postid = str(j.get("postId") or "")
+                if not postid or postid in seen:
+                    continue
+                seen.add(postid)
+                yield dict(
+                    source_id=postid, title=j.get("positionTitle", ""),
+                    location=j.get("workCities", "") or "中国（城市未注明）",
+                    department=j.get("bgs", ""),
+                    employment_type=employment,
+                    description=" ".join(filter(None, [str(j.get("projectName") or ""),
+                                                        str(j.get("recruitLabelName") or "")])),
+                    url=f"https://join.qq.com/post_detail.html?postid={postid}",
+                    published_at=None,
+                )
+            total = int(payload.get("count") or 0)
+            if not batch or len(batch) < body["pageSize"] or page * body["pageSize"] >= total:
+                break
+        else:
+            raise ValueError("Tencent campus pagination truncated: " + keyword)
+
+FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby, "workable": workable, "recruitee": recruitee, "riot": riot, "tencent_campus": tencent_campus}
 
 def normalize(source, job, now):
     title = clean(job["title"])
