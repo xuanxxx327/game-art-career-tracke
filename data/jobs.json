@@ -1,8 +1,28 @@
 {
-  "checked_at": "2026-11-02T16:52:52.639438+00:00",
-  "source_success_count": 5,
+  "checked_at": "2026-11-02T16:56:58.055823+00:00",
+  "source_success_count": 14,
   "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
   "jobs": [
+    {
+      "id": "4870718d6aafc86ae90f653c",
+      "company": "Insomniac Games",
+      "group": "foreign_overseas",
+      "track": "internship",
+      "title": "Environment Art Intern- Undergraduate",
+      "location": "United States, Burbank, CA",
+      "employment_type": "",
+      "department": "Insomniac Games",
+      "url": "https://job-boards.greenhouse.io/insomniac/jobs/6221850004",
+      "published_at": "2026-10-19T18:00:31-04:00",
+      "first_seen": "2026-11-02T16:56:58.055823+00:00",
+      "last_seen": "2026-11-02T16:56:58.055823+00:00",
+      "status": "open",
+      "eligibility": "needs_verification",
+      "eligibility_notes": "",
+      "description_excerpt": "Job ID: R-125850 Role Summary: Join the Art Department at Insomniac Games and gain hands-on experience creating environments and assets that help bring game worlds to life. As an Environment Art Intern, you'll collaborate with experienced artists to model, texture, surface, and place assets within game environments. You'll contribute to creating natural and architectural elements while learning how environment art supports the visual design of a game. Throughout the internship, you'll receive mentorship from senior members of the Environment art team, explore new artistic techniques and tools, and gain practical experience working within a game development studio. What You’ll Be Doing: Model natural and architectural geometry using concept art and photo reference, with a focus on creating props and supporting level artists. Create UV layouts, generate normal maps, and develop textures an",
+      "source_type": "greenhouse",
+      "verified_as_intern_or_campus": true
+    },
     {
       "id": "280d2d5d222ed89f27824d1f",
       "company": "Larian Studios",
@@ -15,7 +35,7 @@
       "url": "https://jobs.lever.co/larian/55238820-92ef-4b4e-ba18-a9fdd027f737",
       "published_at": null,
       "first_seen": "2026-11-02T16:38:45.644877+00:00",
-      "last_seen": "2026-11-02T16:52:52.639438+00:00",
+      "last_seen": "2026-11-02T16:56:58.055823+00:00",
       "status": "open",
       "eligibility": "restricted_region",
       "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
@@ -35,7 +55,7 @@
       "url": "https://api.smartrecruiters.com/v1/companies/Ubisoft2/postings/744000155698619",
       "published_at": "2026-10-15T08:41:07.409Z",
       "first_seen": "2026-11-02T16:49:15.014313+00:00",
-      "last_seen": "2026-11-02T16:52:52.639438+00:00",
+      "last_seen": "2026-11-02T16:56:58.055823+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
@@ -767,8 +787,9 @@
     },
     {
       "company": "PUBG Studios",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 16,
+      "matching": 0
     },
     {
       "company": "Bluehole Studio",
@@ -927,8 +948,9 @@
     },
     {
       "company": "Insomniac Games",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 28,
+      "matching": 1
     },
     {
       "company": "Naughty Dog",
@@ -967,8 +989,9 @@
     },
     {
       "company": "Media Molecule",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 2,
+      "matching": 0
     },
     {
       "company": "Firesprite",
@@ -1224,6 +1247,42 @@
       "company": "Ubisoft Shanghai",
       "status": "not_integrated",
       "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PlayStation Global",
+      "status": "ok",
+      "postings_scanned": 206,
+      "matching": 0
+    },
+    {
+      "company": "Eleventh Hour Games",
+      "status": "ok",
+      "postings_scanned": 3,
+      "matching": 0
+    },
+    {
+      "company": "Mob Entertainment",
+      "status": "ok",
+      "postings_scanned": 9,
+      "matching": 0
+    },
+    {
+      "company": "HyperHug",
+      "status": "ok",
+      "postings_scanned": 12,
+      "matching": 0
+    },
+    {
+      "company": "BulletFarm",
+      "status": "ok",
+      "postings_scanned": 2,
+      "matching": 0
+    },
+    {
+      "company": "Stellar Entertainment",
+      "status": "ok",
+      "postings_scanned": 6,
+      "matching": 0
     }
   ]
 }
