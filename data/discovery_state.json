@@ -419,54 +419,370 @@
     "Ubisoft Chengdu": {
       "checked_at": "2026-11-02T17:03:59.036008+00:00",
       "result": "not_verifiable"
+    },
+    "Ubisoft Quebec": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Pune": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Paris": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Philippines": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft RedLynx": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Osaka": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Shanghai": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Toronto": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "verified"
+    },
+    "Ubisoft Reflections": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Stockholm": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Sofia": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Sherbrooke": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "三七互娱": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "上海软星": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "世纪华通": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "中手游": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "中青宝": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "乐元素": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "儒意景秀": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "冰川网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "凉屋游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "凯撒文化": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "创梦天地": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "剑心互娱": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "勇仕网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "北京软星": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "博乐科技": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "友塔游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "叠纸游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "吉比特": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "四三九九": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "墨麟集团": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "多益网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "天神娱乐": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "完美世界游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "宝通科技": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "富春股份": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "巨人网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "帕斯亚科技": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "库洛游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "心动网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "恺英网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "拳头游戏上海": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "掌趣科技": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "搜狐畅游": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "散爆网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "昆仑万维": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "星辉娱乐": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "朝夕光年": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "柠檬微趣": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "椰岛游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "汉家松鼠": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "江娱互动": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "汤姆猫游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "沐瞳科技": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "波克城市": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "深蓝互动": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "游戏科学": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "游族网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "灵游坊": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "灵犀互娱": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "点点互动": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "烛龙游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "电魂网络": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "畅游": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "百奥家庭互动": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "盛趣游戏": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "祖龙娱乐": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "神州泰岳": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "竞技世界": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "第七大道": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "米哈游": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "维塔士上海": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "维塔士成都": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "维塔士西安": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "网易24 Entertainment": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "网易Joker Studio": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "网易Thunder Fire": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "网易Zen Studio": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "网易互娱": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Warframe Studio": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Singapore": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Winking Studios": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Virtuos Games": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
+    },
+    "Ubisoft Winnipeg": {
+      "checked_at": "2026-11-02T17:09:37.355276+00:00",
+      "result": "not_verifiable"
     }
   },
-  "checked_at": "2026-11-02T17:03:59.036008+00:00",
-  "checked_this_run": 35,
+  "checked_at": "2026-11-02T17:09:37.355276+00:00",
+  "checked_this_run": 85,
   "new_verified_this_run": [
     {
-      "company": "RedHot CG",
+      "company": "Ubisoft Quebec",
       "source": "smartrecruiters",
-      "slug": "redhotcg",
+      "slug": "ubisoftquebec",
       "verification": "public_board_title"
     },
     {
-      "company": "Sperasoft",
-      "source": "workable",
-      "slug": "sperasoft",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Square Enix",
-      "source": "ashby",
-      "slug": "square-enix",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Sucker Punch Productions",
+      "company": "Ubisoft Pune",
       "source": "smartrecruiters",
-      "slug": "suckerpunchproductions",
+      "slug": "ubisoftpune",
       "verification": "public_board_title"
     },
     {
-      "company": "Ubisoft Bordeaux",
+      "company": "Ubisoft Toronto",
       "source": "smartrecruiters",
-      "slug": "ubisoftbordeaux",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Ubisoft Ivory Tower",
-      "source": "smartrecruiters",
-      "slug": "ubisoftivorytower",
-      "verification": "public_board_title"
-    },
-    {
-      "company": "Ubisoft Montreal",
-      "source": "smartrecruiters",
-      "slug": "ubisoftmontreal",
+      "slug": "ubisofttoronto",
       "verification": "public_board_title"
     }
   ],
   "watchlist_size": 241,
-  "configured_sources": 34
+  "configured_sources": 38
 }

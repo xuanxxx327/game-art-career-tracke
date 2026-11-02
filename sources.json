@@ -1292,8 +1292,11 @@
   {
     "name": "Ubisoft Toronto",
     "group": "foreign_china_or_overseas",
-    "source": "links",
-    "priority": 3
+    "source": "smartrecruiters",
+    "priority": 3,
+    "slug": "ubisofttoronto",
+    "homepage": "https://careers.smartrecruiters.com/ubisofttoronto",
+    "verification": "public_board_title"
   },
   {
     "name": "Ubisoft Singapore",
@@ -1397,8 +1400,11 @@
   {
     "name": "Ubisoft Pune",
     "group": "foreign_china_or_overseas",
-    "source": "links",
-    "priority": 3
+    "source": "smartrecruiters",
+    "priority": 3,
+    "slug": "ubisoftpune",
+    "homepage": "https://careers.smartrecruiters.com/ubisoftpune",
+    "verification": "public_board_title"
   },
   {
     "name": "Ubisoft Mumbai",
@@ -1415,8 +1421,11 @@
   {
     "name": "Ubisoft Quebec",
     "group": "foreign_china_or_overseas",
-    "source": "links",
-    "priority": 3
+    "source": "smartrecruiters",
+    "priority": 3,
+    "slug": "ubisoftquebec",
+    "homepage": "https://careers.smartrecruiters.com/ubisoftquebec",
+    "verification": "public_board_title"
   },
   {
     "name": "Ubisoft Sherbrooke",
