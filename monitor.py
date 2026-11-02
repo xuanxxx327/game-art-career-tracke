@@ -1,4 +1,4 @@
-"""Public-careers prototype. Results are unverified candidates."""
+"""Public-careers discovery prototype. All matches require official verification."""
 import datetime
 import json
 import pathlib
@@ -15,37 +15,52 @@ def collect(company):
     url = company["careers_url"]
     parts = urllib.parse.urlparse(url)
     if parts.scheme != "https":
-        return [], "invalid_url"
+        return [], {"status": "invalid_url"}
     robots = urllib.robotparser.RobotFileParser()
     robots.set_url(f"{parts.scheme}://{parts.netloc}/robots.txt")
     try:
         robots.read()
         if not robots.can_fetch("GameArtCareerTracker/0.1", url):
-            return [], "robots_disallowed"
+            return [], {"status": "robots_disallowed"}
     except Exception:
-        return [], "robots_unavailable"
+        return [], {"status": "robots_unavailable"}
     page = Fetcher.get(url, timeout=20)
+    status_code = getattr(page, "status", None)
+    if status_code is None:
+        status_code = getattr(page, "status_code", None)
+    if status_code and int(status_code) >= 400:
+        return [], {"status": "http_error", "http_status": status_code}
+    anchors = page.css("a[href]")
     rows = []
-    for a in page.css("a[href]"):
+    for a in anchors:
         title = " ".join(a.css("::text").getall()).strip()
         link = urllib.parse.urljoin(url, a.attrib.get("href", ""))
-        if ART.search(title) and INTERN.search(title) and urllib.parse.urlparse(link).scheme == "https":
-            rows.append({"company": company["name"], "title": title[:250], "url": link, "status": "candidate_unverified", "eligibility": "unknown", "location": None, "deadline": None})
-    return rows, "ok"
+        if ART.search(title) and urllib.parse.urlparse(link).scheme == "https":
+            rows.append({
+                "company": company["name"], "title": title[:250], "url": link,
+                "status": "candidate_unverified",
+                "internship_signal": bool(INTERN.search(title)),
+                "eligibility": "unknown", "location": None, "deadline": None
+            })
+    return rows, {"status": "fetched", "http_status": status_code, "anchors_scanned": len(anchors), "art_related_links": len(rows)}
 
 def main():
     companies = json.loads((ROOT / "companies.json").read_text(encoding="utf-8"))
     jobs, diagnostics = [], []
     for company in companies:
         try:
-            rows, status = collect(company)
+            rows, info = collect(company)
             jobs.extend(rows)
-            diagnostics.append({"company": company["name"], "status": status, "candidates": len(rows)})
+            diagnostics.append({"company": company["name"], **info, "candidates": len(rows)})
         except Exception as exc:
-            diagnostics.append({"company": company["name"], "status": type(exc).__name__, "candidates": 0})
+            diagnostics.append({"company": company["name"], "status": "fetch_exception", "error_type": type(exc).__name__, "candidates": 0})
     jobs = list({row["url"]: row for row in jobs}.values())
-    (ROOT / "results.json").write_text(json.dumps({"checked_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "jobs": jobs, "diagnostics": diagnostics}, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Checked {len(companies)} companies; {len(jobs)} unverified candidates")
+    (ROOT / "results.json").write_text(json.dumps({
+        "checked_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "jobs": jobs, "diagnostics": diagnostics,
+        "warning": "These are unverified art-related links, not confirmed internship openings. Zero matches does not mean no vacancies."
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Checked {len(companies)} companies; {len(jobs)} unverified art-related links")
 
 if __name__ == "__main__":
     main()
