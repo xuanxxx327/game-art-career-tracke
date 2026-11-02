@@ -41,9 +41,11 @@
   {
     "name": "Electronic Arts",
     "group": "foreign_china",
-    "source": "links",
-    "homepage": "https://www.ea.com/careers",
-    "priority": 1
+    "source": "smartrecruiters",
+    "homepage": "https://careers.smartrecruiters.com/electronicarts",
+    "priority": 1,
+    "slug": "electronicarts",
+    "verification": "public_board_title"
   },
   {
     "name": "Ubisoft",
@@ -56,9 +58,11 @@
   {
     "name": "Virtuos",
     "group": "foreign_china",
-    "source": "links",
-    "homepage": "https://www.virtuosgames.com/careers/",
-    "priority": 1
+    "source": "smartrecruiters",
+    "homepage": "https://careers.smartrecruiters.com/virtuos",
+    "priority": 1,
+    "slug": "virtuos",
+    "verification": "public_board_title"
   },
   {
     "name": "Embark Studios",
@@ -899,8 +903,11 @@
   {
     "name": "Krafton",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "krafton",
+    "homepage": "https://job-boards.greenhouse.io/krafton",
+    "verification": "public_board_title"
   },
   {
     "name": "PUBG Studios",
@@ -1149,8 +1156,11 @@
   {
     "name": "Bluepoint Games",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "bluepoint-games",
+    "homepage": "https://apply.workable.com/bluepoint-games/",
+    "verification": "public_board_title"
   },
   {
     "name": "Santa Monica Studio",
@@ -1214,8 +1224,11 @@
   {
     "name": "BioWare",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "bioware",
+    "homepage": "https://apply.workable.com/bioware/",
+    "verification": "public_board_title"
   },
   {
     "name": "Criterion Games",
@@ -1226,8 +1239,11 @@
   {
     "name": "Codemasters",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "codemasters",
+    "homepage": "https://apply.workable.com/codemasters/",
+    "verification": "public_board_title"
   },
   {
     "name": "Maxis",
