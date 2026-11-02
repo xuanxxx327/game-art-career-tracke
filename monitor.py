@@ -162,21 +162,17 @@ def riot(source):
             attrs = dict(attrs)
             if tag == "a" and not self.active:
                 href = attrs.get("href", "")
-                if re.search(r"/(?:en/)?(?:j/\\d+|work-with-us/job/\\d+)", href):
+                if re.search(r"/(?:en/)?(?:j/[0-9]+|work-with-us/job/[0-9]+)", href):
                     self.active = True
                     self.depth = 1
                     self.href = urljoin("https://www.riotgames.com", href)
                     self.parts = []
                     return
-            if self.active:
-                self.depth += 1
         def handle_endtag(self, tag):
-            if self.active:
-                self.depth -= 1
-                if self.depth == 0:
-                    if self.parts:
+            if self.active and tag == "a":
+                if self.parts:
                         self.jobs.append((self.href, self.parts[:]))
-                    self.active = False
+                self.active = False
         def handle_data(self, data):
             if self.active and data.strip():
                 self.parts.append(data.strip())
