@@ -101,7 +101,7 @@ def normalize(source, job, now):
     # Classification deliberately uses job metadata and title, NOT description
     # (descriptions frequently mention interns or graduates incidentally).
     tag = " ".join([title, employment, department])
-    if not ART.search(title + " " + department):
+    if not ART.search(title):
         return None
     if SENIOR.search(title):
         return None
