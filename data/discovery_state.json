@@ -139,30 +139,206 @@
     "EA Korea": {
       "checked_at": "2026-11-02T17:00:05.219633+00:00",
       "result": "not_verifiable"
+    },
+    "Falcom": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Firesprite": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "FromSoftware": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "FunPlus": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Housemarque": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "IGG": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Haven Studios": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Game Freak": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Grinding Gear Games": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Konami": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Kakao Games": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Guerrilla Games": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Level-5": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Krafton": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Marvelous": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Maxis": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Keywords Studios China": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "GungHo Online Entertainment": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "NCSoft": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Naughty Dog": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Neowiz": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Koei Tecmo": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Netmarble": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Monolith Soft": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Massive Entertainment": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Motive Studio": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Nexon America": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Lakshya Digital": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "Nexon Games": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Nintendo": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Nexon Korea": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Pearl Abyss": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "verified"
+    },
+    "PlatinumGames": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "PTW China": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
+    },
+    "Nihon Falcom": {
+      "checked_at": "2026-11-02T17:03:00.507631+00:00",
+      "result": "not_verifiable"
     }
   },
-  "checked_at": "2026-11-02T17:00:05.219633+00:00",
+  "checked_at": "2026-11-02T17:03:00.507631+00:00",
   "checked_this_run": 35,
   "new_verified_this_run": [
     {
-      "company": "NetEase Games",
+      "company": "Firesprite",
       "source": "greenhouse",
-      "slug": "neteasegames",
+      "slug": "firesprite",
       "verification": "public_board_title"
     },
     {
-      "company": "Avalanche Studios",
-      "source": "lever",
-      "slug": "avalanchestudios",
+      "company": "FunPlus",
+      "source": "workable",
+      "slug": "funplus",
       "verification": "public_board_title"
     },
     {
-      "company": "Digital Extremes",
+      "company": "Housemarque",
       "source": "greenhouse",
-      "slug": "digitalextremes",
+      "slug": "housemarque",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Grinding Gear Games",
+      "source": "workable",
+      "slug": "grinding-gear-games",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Guerrilla Games",
+      "source": "greenhouse",
+      "slug": "guerrilla-games",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Naughty Dog",
+      "source": "greenhouse",
+      "slug": "naughtydog",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Netmarble",
+      "source": "workable",
+      "slug": "netmarble",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Lakshya Digital",
+      "source": "workable",
+      "slug": "lakshyadigital",
+      "verification": "public_board_title"
+    },
+    {
+      "company": "Pearl Abyss",
+      "source": "workable",
+      "slug": "pearlabyss",
       "verification": "public_board_title"
     }
   ],
   "watchlist_size": 241,
-  "configured_sources": 18
+  "configured_sources": 27
 }

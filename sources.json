@@ -302,8 +302,11 @@
   {
     "name": "FunPlus",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "funplus",
+    "homepage": "https://apply.workable.com/funplus/",
+    "verification": "public_board_title"
   },
   {
     "name": "IGG",
@@ -806,8 +809,11 @@
   {
     "name": "Lakshya Digital",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "lakshyadigital",
+    "homepage": "https://apply.workable.com/lakshyadigital/",
+    "verification": "public_board_title"
   },
   {
     "name": "RedHot CG",
@@ -845,14 +851,20 @@
   {
     "name": "Grinding Gear Games",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "grinding-gear-games",
+    "homepage": "https://apply.workable.com/grinding-gear-games/",
+    "verification": "public_board_title"
   },
   {
     "name": "Pearl Abyss",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "pearlabyss",
+    "homepage": "https://apply.workable.com/pearlabyss/",
+    "verification": "public_board_title"
   },
   {
     "name": "Nexon Games",
@@ -919,8 +931,11 @@
   {
     "name": "Netmarble",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "workable",
+    "priority": 3,
+    "slug": "netmarble",
+    "homepage": "https://apply.workable.com/netmarble/",
+    "verification": "public_board_title"
   },
   {
     "name": "Com2uS",
@@ -1089,8 +1104,11 @@
   {
     "name": "Naughty Dog",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "naughtydog",
+    "homepage": "https://job-boards.greenhouse.io/naughtydog",
+    "verification": "public_board_title"
   },
   {
     "name": "Sucker Punch Productions",
@@ -1101,14 +1119,20 @@
   {
     "name": "Guerrilla Games",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "guerrilla-games",
+    "homepage": "https://job-boards.greenhouse.io/guerrilla-games",
+    "verification": "public_board_title"
   },
   {
     "name": "Housemarque",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "housemarque",
+    "homepage": "https://job-boards.greenhouse.io/housemarque",
+    "verification": "public_board_title"
   },
   {
     "name": "Bluepoint Games",
@@ -1139,8 +1163,11 @@
   {
     "name": "Firesprite",
     "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "source": "greenhouse",
+    "priority": 3,
+    "slug": "firesprite",
+    "homepage": "https://job-boards.greenhouse.io/firesprite",
+    "verification": "public_board_title"
   },
   {
     "name": "Haven Studios",
