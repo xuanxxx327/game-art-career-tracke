@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Art Career Tracker | 游戏美术招聘监控</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#e9eef8;background:#0d1320;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:24px 16px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:clamp(24px,5vw,36px);margin:12px 0 5px}p{line-height:1.6}.muted{color:#a4b3ca;font-size:14px}
+.brand{color:#81c9ff;font-size:12px;letter-spacing:2px;font-weight:700}.badge{padding:7px 12px;border:1px solid #34465f;border-radius:20px;color:#b9c9de;font-size:13px}
+.panel{background:#161f30;border:1px solid #2d3d54;border-radius:16px;padding:18px;margin-top:18px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stat{background:#161f30;border:1px solid #2d3d54;border-radius:14px;padding:16px}.stat strong{display:block;font-size:30px;margin-top:8px}
+.tabs{display:flex;gap:8px;margin:16px 0}.tabs button{flex:1;font-size:16px;font-weight:700}
+button,select,input{font:inherit;background:#202e44;color:#edf3fb;border:1px solid #455872;border-radius:10px;padding:12px;min-height:44px}
+button{cursor:pointer}.active{background:#2773c7;border-color:#64b0ff}.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.job{border-bottom:1px solid #334056;padding:18px 0}.job:last-child{border-bottom:0}.job h3{margin:0 0 8px;font-size:17px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;color:#b3c2d7;font-size:13px}.pill{padding:4px 8px;background:#263650;border-radius:7px}
+.job a{display:inline-block;margin-top:12px;color:#92d3ff;font-weight:600}.empty{padding:35px 8px;text-align:center;color:#b6c4d6}
+summary{cursor:pointer}.warn{color:#ffce88}a{color:#92d3ff}
+@media(max-width:620px){.filters{grid-template-columns:1fr}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:23px}main{padding:18px 12px}}
+</style>
+</head>
+<body><main>
+<header><div><div class="brand">GAME ART CAREER TRACKER</div><h1>游戏美术招聘监控</h1><div class="muted">环境美术 · 场景建模 · Level Art · 道具 / 材质</div></div><div class="badge" id="updated">正在加载采集数据…</div></header>
+<section class="stats"><div class="stat"><span class="muted">实习岗位</span><strong id="internCount">—</strong></div><div class="stat"><span class="muted">校招岗位</span><strong id="campusCount">—</strong></div><div class="stat"><span class="muted">成功数据源</span><strong id="sourceCount">—</strong></div></section>
+<section class="panel"><div class="tabs"><button id="internTab" class="active" type="button">🎓 实习岗位</button><button id="campusTab" type="button">🚀 校招岗位</button></div>
+<div class="filters"><input id="search" type="search" placeholder="搜索公司、岗位、城市…" aria-label="搜索岗位"><select id="region" aria-label="地区"><option value="all">全部地区</option><option value="china">中国境内</option><option value="overseas">海外 / 待核实</option></select><select id="state" aria-label="岗位状态"><option value="open">本次仍在招聘</option><option value="all">全部记录</option></select></div>
+<div id="list" aria-live="polite"><div class="empty">正在读取岗位…</div></div></section>
+<section class="panel"><details><summary>采集状态与数据说明</summary><p class="muted">只把明确带有 Internship / Intern 或 Graduate / 校招标记的美术岗位分入对应栏目。普通社招不会冒充校招。海外岗位的签证和申请资格尚需查阅官方岗位说明。</p><div id="diagnostics" class="muted">尚无数据。</div><p class="muted">部分公司尚未接入结构化数据源。没有结果不代表公司没有招聘。历史岗位若在最新一次成功采集中消失，仅标记为“本次未见”，不直接判定关闭。</p></details></section>
+<footer class="muted" style="margin-top:20px">仅供求职信息整理 · 申请请以公司官方招聘网站为准</footer>
+</main>
+<script>
+(()=>{const $=id=>document.getElementById(id);let track="internship",all=[];const china=/china|shanghai|beijing|guangzhou|shenzhen|chengdu|hangzhou|suzhou|wuhan|nanjing|中国|上海|北京|广州|深圳|成都|杭州|苏州|武汉|南京/i;
+function node(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e}
+function render(){const q=$("search").value.trim().toLowerCase(),reg=$("region").value,state=$("state").value;const rows=all.filter(j=>j.track===track&&(state==="all"||j.status==="open")&&(reg==="all"||(reg==="china"?china.test(j.location):!china.test(j.location)))&&[j.title,j.company,j.location].join(" ").toLowerCase().includes(q));const list=$("list");list.replaceChildren();if(!rows.length){list.append(node("div","empty","当前筛选下没有已核实类别的岗位。可能尚未完成采集，请查看下方采集状态。"));return}
+for(const j of rows){const card=node("article","job"),h=node("h3","",j.title),m=node("div","meta");for(const t of [j.company,j.location,j.status==="open"?"本次可见":"本次未见 · 待核实",j.eligibility==="needs_verification"?"海外申请资格待核实":"申请要求请查官方"])m.append(node("span","pill",t));card.append(h,m);if(j.published_at)card.append(node("p","muted","发布时间："+String(j.published_at).slice(0,10)));if(j.description_excerpt)card.append(node("p","muted",j.description_excerpt.slice(0,240)));try{const u=new URL(j.url);if(u.protocol==="https:"){const a=node("a","","查看官方岗位 ↗");a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";card.append(a)}}catch{}list.append(card)}}
+function setTrack(t){track=t;$("internTab").classList.toggle("active",t==="internship");$("campusTab").classList.toggle("active",t==="campus");render()}
+$("internTab").addEventListener("click",()=>setTrack("internship"));$("campusTab").addEventListener("click",()=>setTrack("campus"));for(const id of ["search","region","state"])$(id).addEventListener(id==="search"?"input":"change",render);
+fetch("./data/jobs.json?cache="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{all=Array.isArray(data.jobs)?data.jobs:[];$("updated").textContent=data.checked_at?"最近采集："+new Date(data.checked_at).toLocaleString("zh-CN"):"等待首次采集";$("internCount").textContent=all.filter(j=>j.track==="internship"&&j.status==="open").length;$("campusCount").textContent=all.filter(j=>j.track==="campus"&&j.status==="open").length;$("sourceCount").textContent=String(data.source_success_count||0);const d=$("diagnostics");d.replaceChildren();for(const s of data.diagnostics||[]){const line=node("p","",s.company+" — "+(s.status==="ok"?"成功，匹配 "+s.matching+" / 扫描 "+s.postings_scanned:s.status==="not_integrated"?"等待数据源接入":"请求失败："+s.error));d.append(line)}render()}).catch(e=>{$("updated").textContent="数据读取失败";$("list").replaceChildren(node("div","empty","无法读取 data/jobs.json："+e.message))});
+})();
+</script></body></html>
