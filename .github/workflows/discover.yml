@@ -1,0 +1,48 @@
+name: Discover Official Game Studio Job Boards
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 2 * * *'
+  push:
+    paths:
+      - discover.py
+      - .github/workflows/discover.yml
+permissions:
+  contents: write
+concurrency:
+  group: discover-job-boards
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install runtime
+        run: pip install -r requirements.txt
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify company ATS links in rotating batch
+        env:
+          DISCOVERY_BATCH_SIZE: '35'
+        run: python discover.py
+      - name: Save verified sources and discovery diagnostics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources.json data/discovery_state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Discover and verify official recruitment sources"
+            for n in 1 2 3; do
+              git pull --rebase origin main && git push origin HEAD:main && break
+              if [ "$n" -eq 3 ]; then
+                echo "Failed to publish discovery results" >&2
+                exit 1
+              fi
+              sleep 3
+            done
+          fi
