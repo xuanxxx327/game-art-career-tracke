@@ -881,9 +881,11 @@
   },
   {
     "name": "PUBG Studios",
-    "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "group": "foreign_overseas",
+    "source": "greenhouse",
+    "priority": 2,
+    "slug": "pubgcorporation",
+    "homepage": "https://job-boards.greenhouse.io/pubgcorporation"
   },
   {
     "name": "Bluehole Studio",
@@ -1073,9 +1075,11 @@
   },
   {
     "name": "Insomniac Games",
-    "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "group": "foreign_overseas",
+    "source": "greenhouse",
+    "priority": 2,
+    "slug": "insomniac",
+    "homepage": "https://job-boards.greenhouse.io/insomniac"
   },
   {
     "name": "Naughty Dog",
@@ -1121,9 +1125,11 @@
   },
   {
     "name": "Media Molecule",
-    "group": "watchlist",
-    "source": "links",
-    "priority": 3
+    "group": "foreign_overseas",
+    "source": "greenhouse",
+    "priority": 2,
+    "slug": "mm",
+    "homepage": "https://job-boards.greenhouse.io/mm"
   },
   {
     "name": "Firesprite",
@@ -1430,5 +1436,53 @@
     "group": "foreign_china_or_overseas",
     "source": "links",
     "priority": 3
+  },
+  {
+    "name": "PlayStation Global",
+    "source": "greenhouse",
+    "slug": "sonyinteractiveentertainmentglobal",
+    "homepage": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal",
+    "group": "foreign_overseas",
+    "priority": 2
+  },
+  {
+    "name": "Eleventh Hour Games",
+    "source": "greenhouse",
+    "slug": "eleventhhourgames",
+    "homepage": "https://job-boards.greenhouse.io/eleventhhourgames",
+    "group": "foreign_overseas",
+    "priority": 2
+  },
+  {
+    "name": "Mob Entertainment",
+    "source": "greenhouse",
+    "slug": "mobentertainment",
+    "homepage": "https://job-boards.greenhouse.io/mobentertainment",
+    "group": "foreign_overseas",
+    "priority": 2
+  },
+  {
+    "name": "HyperHug",
+    "source": "ashby",
+    "slug": "hyperhug",
+    "homepage": "https://jobs.ashbyhq.com/hyperhug",
+    "group": "foreign_overseas",
+    "priority": 2
+  },
+  {
+    "name": "BulletFarm",
+    "source": "ashby",
+    "slug": "bulletfarm",
+    "homepage": "https://jobs.ashbyhq.com/bulletfarm",
+    "group": "foreign_overseas",
+    "priority": 2
+  },
+  {
+    "name": "Stellar Entertainment",
+    "source": "ashby",
+    "slug": "stellarentertainment",
+    "homepage": "https://jobs.ashbyhq.com/stellarentertainment",
+    "group": "foreign_overseas",
+    "priority": 2
   }
 ]
