@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Electronic Arts",
+    "careers_url": "https://www.ea.com/careers",
+    "priority": 1
+  },
+  {
+    "name": "Ubisoft",
+    "careers_url": "https://www.ubisoft.com/en-us/company/careers",
+    "priority": 1
+  },
+  {
+    "name": "Riot Games",
+    "careers_url": "https://www.riotgames.com/en/work-with-us/jobs",
+    "priority": 1
+  },
+  {
+    "name": "Virtuos",
+    "careers_url": "https://www.virtuosgames.com/careers/",
+    "priority": 1
+  },
+  {
+    "name": "Embark Studios",
+    "careers_url": "https://careers.embark-studios.com/jobs",
+    "priority": 2
+  },
+  {
+    "name": "Tencent Games",
+    "careers_url": "https://join.qq.com/",
+    "priority": 1
+  },
+  {
+    "name": "NetEase Games",
+    "careers_url": "https://game.campus.163.com/",
+    "priority": 1
+  },
+  {
+    "name": "miHoYo",
+    "careers_url": "https://join.mihoyo.com/",
+    "priority": 1
+  }
+]
