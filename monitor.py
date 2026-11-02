@@ -1,66 +1,176 @@
-"""Public-careers discovery prototype. All matches require official verification."""
-import datetime
+"""Game art openings monitor: structured ATS first; two separate recruitment tracks."""
+from __future__ import annotations
+import datetime as dt
+import hashlib
+import html
 import json
-import pathlib
+import os
+from pathlib import Path
 import re
-import urllib.parse
-import urllib.robotparser
-from scrapling.fetchers import Fetcher
+import sys
+from urllib.parse import urlparse
 
-ROOT = pathlib.Path(__file__).parent
-ART = re.compile(r"environment|level art|world art|prop artist|3d art|material artist|场景|环境美术|地编|道具美术|材质", re.I)
-INTERN = re.compile(r"intern|internship|trainee|实习|暑期项目", re.I)
+import requests
 
-def collect(company):
-    url = company["careers_url"]
-    parts = urllib.parse.urlparse(url)
-    if parts.scheme != "https":
-        return [], {"status": "invalid_url"}
-    robots = urllib.robotparser.RobotFileParser()
-    robots.set_url(f"{parts.scheme}://{parts.netloc}/robots.txt")
-    try:
-        robots.read()
-        if not robots.can_fetch("GameArtCareerTracker/0.1", url):
-            return [], {"status": "robots_disallowed"}
-    except Exception:
-        return [], {"status": "robots_unavailable"}
-    page = Fetcher.get(url, timeout=20)
-    status_code = getattr(page, "status", None)
-    if status_code is None:
-        status_code = getattr(page, "status_code", None)
-    if status_code and int(status_code) >= 400:
-        return [], {"status": "http_error", "http_status": status_code}
-    anchors = page.css("a[href]")
-    rows = []
-    for a in anchors:
-        title = " ".join(a.css("::text").getall()).strip()
-        link = urllib.parse.urljoin(url, a.attrib.get("href", ""))
-        if ART.search(title) and urllib.parse.urlparse(link).scheme == "https":
-            rows.append({
-                "company": company["name"], "title": title[:250], "url": link,
-                "status": "candidate_unverified",
-                "internship_signal": bool(INTERN.search(title)),
-                "eligibility": "unknown", "location": None, "deadline": None
-            })
-    return rows, {"status": "fetched", "http_status": status_code, "anchors_scanned": len(anchors), "art_related_links": len(rows)}
+ROOT = Path(__file__).parent
+DATA = ROOT / "data"
+DATA.mkdir(exist_ok=True)
+TIMEOUT = 18
+UA = "GameArtCareerTracker/0.2 (+personal research; public job board APIs)"
+SESSION = requests.Session()
+SESSION.headers.update({"User-Agent": UA, "Accept": "application/json"})
+ART = re.compile(r"environment|world art|level art|level artist|prop artist|3d artist|3d art|3d model|material artist|texture artist|lighting artist|technical artist|场景|环境美术|地编|道具美术|模型师|材质|灯光美术|技术美术", re.I)
+INTERNSHIP = re.compile(r"intern(ship)?|trainee|placement|实习|暑期实习", re.I)
+CAMPUS = re.compile(r"graduate|new grad|new graduate|entry.level|early career|campus|university grad|应届|校招|校园招聘|毕业生|管培", re.I)
+SENIOR = re.compile(r"senior|staff|principal|lead|director|manager|head of|高级|资深|专家|主管|负责人|总监", re.I)
+CHINA = re.compile(r"china|shanghai|beijing|guangzhou|shenzhen|chengdu|hangzhou|suzhou|wuhan|nanjing|中国|上海|北京|广州|深圳|成都|杭州|苏州|武汉|南京", re.I)
+
+def clean(value):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(value or "")))).strip()
+
+def get_json(url):
+    r = SESSION.get(url, timeout=TIMEOUT)
+    r.raise_for_status()
+    return r.json()
+
+def lever(source):
+    slug = source["slug"]
+    raw = get_json(f"https://api.lever.co/v0/postings/{slug}?mode=json")
+    if not isinstance(raw, list):
+        raise ValueError("Lever response was not a list")
+    for j in raw:
+        cats = j.get("categories") or {}
+        yield dict(
+            source_id=str(j.get("id", "")),
+            title=j.get("text", ""),
+            location=cats.get("location", ""),
+            department=cats.get("team", ""),
+            employment_type=cats.get("commitment", ""),
+            description=clean(j.get("descriptionPlain") or j.get("description")),
+            url=j.get("hostedUrl") or j.get("applyUrl", ""),
+            published_at=None,
+        )
+
+def smartrecruiters(source):
+    slug = source["slug"]
+    offset = 0
+    for _ in range(20):
+        raw = get_json(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100&offset={offset}")
+        batch = raw.get("content", [])
+        if not isinstance(batch, list):
+            raise ValueError("SmartRecruiters response invalid")
+        for j in batch:
+            loc = j.get("location") or {}
+            typ = j.get("typeOfEmployment") or {}
+            yield dict(
+                source_id=str(j.get("id", "")),
+                title=j.get("name", ""),
+                location=", ".join(filter(None, [loc.get("city"), loc.get("region"), loc.get("country")])),
+                department=(j.get("department") or {}).get("label", ""),
+                employment_type=typ.get("label", "") if isinstance(typ, dict) else str(typ),
+                description="",
+                url=j.get("ref") or f"https://jobs.smartrecruiters.com/{slug}/{j.get('id', '')}",
+                published_at=j.get("releasedDate"),
+            )
+        offset += len(batch)
+        if not batch or offset >= raw.get("totalFound", offset):
+            break
+
+def greenhouse(source):
+    raw = get_json(f"https://boards-api.greenhouse.io/v1/boards/{source['slug']}/jobs?content=true")
+    for j in raw.get("jobs", []):
+        yield dict(
+            source_id=str(j.get("id", "")),
+            title=j.get("title", ""),
+            location=(j.get("location") or {}).get("name", ""),
+            department=", ".join(d.get("name", "") for d in (j.get("departments") or [])),
+            employment_type="",
+            description=clean(j.get("content")),
+            url=j.get("absolute_url", ""),
+            published_at=j.get("first_published"),
+        )
+
+FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse}
+
+def normalize(source, job, now):
+    title = clean(job["title"])
+    location = clean(job.get("location"))
+    description = clean(job.get("description"))
+    employment = clean(job.get("employment_type"))
+    department = clean(job.get("department"))
+    # Classification deliberately uses job metadata and title, NOT description
+    # (descriptions frequently mention interns or graduates incidentally).
+    tag = " ".join([title, employment, department])
+    if not ART.search(title + " " + department):
+        return None
+    if SENIOR.search(title):
+        return None
+    if INTERNSHIP.search(tag):
+        track = "internship"
+    elif CAMPUS.search(tag):
+        track = "campus"
+    else:
+        # No evidence that a regular full-time role is a campus role.
+        return None
+    url = job.get("url", "")
+    if urlparse(url).scheme != "https":
+        return None
+    ident = job.get("source_id") or url
+    key = hashlib.sha256((source["name"] + ":" + str(ident)).encode()).hexdigest()[:24]
+    overseas = not CHINA.search(location)
+    return {
+        "id": key, "company": source["name"], "group": source["group"],
+        "track": track, "title": title, "location": location or "未注明",
+        "employment_type": employment, "department": department,
+        "url": url, "published_at": job.get("published_at"),
+        "first_seen": now, "last_seen": now, "status": "open",
+        "eligibility": "needs_verification" if overseas else "check_job_requirements",
+        "description_excerpt": description[:900],
+        "source_type": source["source"],
+        "verified_as_intern_or_campus": True,
+    }
 
 def main():
-    companies = json.loads((ROOT / "companies.json").read_text(encoding="utf-8"))
-    jobs, diagnostics = [], []
-    for company in companies:
+    now = dt.datetime.now(dt.timezone.utc).isoformat()
+    sources = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
+    previous_path = DATA / "jobs.json"
+    previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {"jobs": []}
+    previous_jobs = {j["id"]: j for j in previous.get("jobs", [])}
+    jobs = dict(previous_jobs)
+    diagnostics = []
+    success = 0
+    for source in sources:
+        fetch = FETCHERS.get(source["source"])
+        if fetch is None:
+            diagnostics.append({"company": source["name"], "status": "not_integrated", "reason": "Official careers API adapter still needed"})
+            continue
         try:
-            rows, info = collect(company)
-            jobs.extend(rows)
-            diagnostics.append({"company": company["name"], **info, "candidates": len(rows)})
-        except Exception as exc:
-            diagnostics.append({"company": company["name"], "status": "fetch_exception", "error_type": type(exc).__name__, "candidates": 0})
-    jobs = list({row["url"]: row for row in jobs}.values())
-    (ROOT / "results.json").write_text(json.dumps({
-        "checked_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "jobs": jobs, "diagnostics": diagnostics,
-        "warning": "These are unverified art-related links, not confirmed internship openings. Zero matches does not mean no vacancies."
-    }, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Checked {len(companies)} companies; {len(jobs)} unverified art-related links")
+            raw = list(fetch(source))
+            fresh = [j for item in raw if (j := normalize(source, item, now))]
+            ids = set()
+            for job in fresh:
+                ids.add(job["id"])
+                if job["id"] in jobs:
+                    job["first_seen"] = jobs[job["id"]].get("first_seen", now)
+                jobs[job["id"]] = job
+            # Only mark closed after a complete, successful response from that source.
+            for key, job in jobs.items():
+                if job["company"] == source["name"] and key not in ids:
+                    job["status"] = "not_seen_latest_check"
+            diagnostics.append({"company": source["name"], "status": "ok", "postings_scanned": len(raw), "matching": len(fresh)})
+            success += 1
+        except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
+            diagnostics.append({"company": source["name"], "status": "error", "error": type(exc).__name__, "detail": str(exc)[:180]})
+    payload = {
+        "checked_at": now, "source_success_count": success,
+        "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
+        "jobs": sorted(jobs.values(), key=lambda j: (j["track"], j["company"], j["title"])),
+        "diagnostics": diagnostics,
+    }
+    previous_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"sources": len(sources), "successful": success, "internships": sum(j["track"] == "internship" and j["status"] == "open" for j in jobs.values()), "campus": sum(j["track"] == "campus" and j["status"] == "open" for j in jobs.values())}))
+    if not success:
+        print("WARNING: No structured sources succeeded. See diagnostics.", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
