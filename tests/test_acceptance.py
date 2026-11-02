@@ -34,7 +34,6 @@ class DashboardAcceptance(unittest.TestCase):
 
     def test_no_unsafe_inner_html(self):
         self.assertNotIn(".innerHTML", self.html)
-        self.assertIn('rel="noopener noreferrer"', self.html) if False else None
         self.assertIn('a.rel="noopener noreferrer"', self.html)
 
     def test_two_tracks(self):
