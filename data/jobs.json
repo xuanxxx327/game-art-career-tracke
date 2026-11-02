@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-02T16:58:13.286977+00:00",
-  "source_success_count": 14,
+  "checked_at": "2026-11-02T17:04:40.985271+00:00",
+  "source_success_count": 34,
   "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
   "jobs": [
     {
@@ -15,7 +15,7 @@
       "url": "https://job-boards.greenhouse.io/insomniac/jobs/6221850004",
       "published_at": "2026-10-19T18:00:31-04:00",
       "first_seen": "2026-11-02T16:56:58.055823+00:00",
-      "last_seen": "2026-11-02T16:58:13.286977+00:00",
+      "last_seen": "2026-11-02T17:04:40.985271+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
@@ -35,7 +35,7 @@
       "url": "https://jobs.lever.co/larian/55238820-92ef-4b4e-ba18-a9fdd027f737",
       "published_at": null,
       "first_seen": "2026-11-02T16:38:45.644877+00:00",
-      "last_seen": "2026-11-02T16:58:13.286977+00:00",
+      "last_seen": "2026-11-02T17:04:40.985271+00:00",
       "status": "open",
       "eligibility": "restricted_region",
       "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
@@ -52,10 +52,10 @@
       "location": "Bordeaux, Nouvelle-Aquitaine, fr",
       "employment_type": "Intern",
       "department": "Ubisoft",
-      "url": "https://api.smartrecruiters.com/v1/companies/Ubisoft2/postings/744000155698619",
+      "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000155698619",
       "published_at": "2026-10-15T08:41:07.409Z",
       "first_seen": "2026-11-02T16:49:15.014313+00:00",
-      "last_seen": "2026-11-02T16:58:13.286977+00:00",
+      "last_seen": "2026-11-02T17:04:40.985271+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
@@ -85,9 +85,9 @@
     },
     {
       "company": "Xsolla",
-      "status": "error",
-      "error": "ReadTimeout",
-      "detail": "HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=18)"
+      "status": "ok",
+      "postings_scanned": 187,
+      "matching": 0
     },
     {
       "company": "Riot Games",
@@ -123,8 +123,9 @@
     },
     {
       "company": "NetEase Games",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 29,
+      "matching": 0
     },
     {
       "company": "miHoYo",
@@ -303,8 +304,9 @@
     },
     {
       "company": "FunPlus",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "IGG",
@@ -713,8 +715,9 @@
     },
     {
       "company": "Sperasoft",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 75,
+      "matching": 0
     },
     {
       "company": "Winking Studios",
@@ -723,13 +726,15 @@
     },
     {
       "company": "Lakshya Digital",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "RedHot CG",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Virtuos Games",
@@ -743,8 +748,9 @@
     },
     {
       "company": "Digital Extremes",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 9,
+      "matching": 0
     },
     {
       "company": "Warframe Studio",
@@ -753,13 +759,15 @@
     },
     {
       "company": "Grinding Gear Games",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Pearl Abyss",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Nexon Games",
@@ -814,8 +822,9 @@
     },
     {
       "company": "Netmarble",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Com2uS",
@@ -859,8 +868,9 @@
     },
     {
       "company": "Square Enix",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "PlatinumGames",
@@ -955,23 +965,27 @@
     },
     {
       "company": "Naughty Dog",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 15,
+      "matching": 0
     },
     {
       "company": "Sucker Punch Productions",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Guerrilla Games",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Housemarque",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 5,
+      "matching": 0
     },
     {
       "company": "Bluepoint Games",
@@ -996,8 +1010,9 @@
     },
     {
       "company": "Firesprite",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 1,
+      "matching": 0
     },
     {
       "company": "Haven Studios",
@@ -1071,8 +1086,9 @@
     },
     {
       "company": "Avalanche Studios",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 4,
+      "matching": 0
     },
     {
       "company": "Massive Entertainment",
@@ -1081,8 +1097,9 @@
     },
     {
       "company": "Ubisoft Montreal",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Ubisoft Toronto",
@@ -1106,8 +1123,9 @@
     },
     {
       "company": "Ubisoft Bordeaux",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Ubisoft Paris",
@@ -1236,8 +1254,9 @@
     },
     {
       "company": "Ubisoft Ivory Tower",
-      "status": "not_integrated",
-      "reason": "Official careers API adapter still needed"
+      "status": "ok",
+      "postings_scanned": 0,
+      "matching": 0
     },
     {
       "company": "Ubisoft Chengdu",
