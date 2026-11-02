@@ -90,7 +90,27 @@ def greenhouse(source):
             published_at=j.get("first_published"),
         )
 
-FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse}
+def ashby(source):
+    """Public Ashby job board, no private API key needed."""
+    slug = source["slug"]
+    raw = get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true")
+    if not isinstance(raw.get("jobs"), list):
+        raise ValueError("Ashby response invalid")
+    for j in raw["jobs"]:
+        if j.get("isListed") is False:
+            continue
+        yield dict(
+            source_id=str(j.get("id") or j.get("jobUrl") or ""),
+            title=j.get("title", ""),
+            location=j.get("location", ""),
+            department=j.get("department", ""),
+            employment_type=j.get("employmentType", ""),
+            description=clean(j.get("descriptionPlain") or j.get("descriptionHtml")),
+            url=j.get("jobUrl") or j.get("applyUrl", ""),
+            published_at=j.get("publishedAt"),
+        )
+
+FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby}
 
 def normalize(source, job, now):
     title = clean(job["title"])
