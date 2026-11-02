@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Larian Studios",
+    "group": "foreign_overseas",
+    "source": "lever",
+    "slug": "larian",
+    "homepage": "https://larian.com/careers",
+    "priority": 1
+  },
+  {
+    "name": "Keywords Studios",
+    "group": "foreign_china_or_overseas",
+    "source": "smartrecruiters",
+    "slug": "KeywordsStudios",
+    "homepage": "https://careers.smartrecruiters.com/KeywordsStudios",
+    "priority": 1
+  },
+  {
+    "name": "Riot Games",
+    "group": "foreign_china",
+    "source": "links",
+    "homepage": "https://www.riotgames.com/en/work-with-us/jobs",
+    "priority": 1
+  },
+  {
+    "name": "Electronic Arts",
+    "group": "foreign_china",
+    "source": "links",
+    "homepage": "https://www.ea.com/careers",
+    "priority": 1
+  },
+  {
+    "name": "Ubisoft",
+    "group": "foreign_china",
+    "source": "links",
+    "homepage": "https://www.ubisoft.com/en-us/company/careers",
+    "priority": 1
+  },
+  {
+    "name": "Virtuos",
+    "group": "foreign_china",
+    "source": "links",
+    "homepage": "https://www.virtuosgames.com/careers/",
+    "priority": 1
+  },
+  {
+    "name": "Embark Studios",
+    "group": "foreign_overseas",
+    "source": "links",
+    "homepage": "https://careers.embark-studios.com/jobs",
+    "priority": 2
+  },
+  {
+    "name": "Tencent Games",
+    "group": "domestic_major",
+    "source": "links",
+    "homepage": "https://join.qq.com/",
+    "priority": 1
+  },
+  {
+    "name": "NetEase Games",
+    "group": "domestic_major",
+    "source": "links",
+    "homepage": "https://game.campus.163.com/",
+    "priority": 1
+  },
+  {
+    "name": "miHoYo",
+    "group": "domestic_major",
+    "source": "links",
+    "homepage": "https://join.mihoyo.com/",
+    "priority": 1
+  },
+  {
+    "name": "Lilith Games",
+    "group": "domestic_major",
+    "source": "links",
+    "homepage": "https://www.lilith.com/",
+    "priority": 1
+  },
+  {
+    "name": "Papergames",
+    "group": "domestic_major",
+    "source": "links",
+    "homepage": "https://www.papegames.com/",
+    "priority": 1
+  },
+  {
+    "name": "Hypergryph",
+    "group": "domestic_mid",
+    "source": "links",
+    "homepage": "https://www.hypergryph.com/",
+    "priority": 2
+  },
+  {
+    "name": "Kuro Games",
+    "group": "domestic_mid",
+    "source": "links",
+    "homepage": "https://www.kurogames.com/",
+    "priority": 2
+  },
+  {
+    "name": "Passtech / Pathea Games",
+    "group": "domestic_mid",
+    "source": "links",
+    "homepage": "https://pathea.net/",
+    "priority": 2
+  }
+]
