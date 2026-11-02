@@ -110,7 +110,42 @@ def ashby(source):
             published_at=j.get("publishedAt"),
         )
 
-FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby}
+def workable(source):
+    """Public Workable widget feed."""
+    raw = get_json(f"https://apply.workable.com/api/v1/widget/accounts/{source['slug']}?details=true")
+    batch = raw.get("jobs", []) if isinstance(raw, dict) else []
+    if not isinstance(batch, list):
+        raise ValueError("Workable jobs response invalid")
+    for j in batch:
+        loc = j.get("location") or {}
+        if isinstance(loc, dict):
+            place = ", ".join(str(v) for v in [loc.get("city"), loc.get("country")] if v)
+        else:
+            place = str(loc)
+        yield dict(source_id=str(j.get("shortcode") or j.get("id") or ""),
+                   title=j.get("title", ""), location=place,
+                   department=j.get("department", ""),
+                   employment_type=j.get("employment_type", ""),
+                   description=clean(j.get("description", "")),
+                   url=j.get("url") or j.get("application_url") or "",
+                   published_at=j.get("published_on"))
+
+def recruitee(source):
+    """Public Recruitee careers API."""
+    raw = get_json(f"https://{source['slug']}.recruitee.com/api/offers/")
+    batch = raw.get("offers", []) if isinstance(raw, dict) else []
+    if not isinstance(batch, list):
+        raise ValueError("Recruitee offers response invalid")
+    for j in batch:
+        yield dict(source_id=str(j.get("id") or ""),
+                   title=j.get("title", ""), location=j.get("location", ""),
+                   department=j.get("department", ""),
+                   employment_type=j.get("employment_type", ""),
+                   description=clean(j.get("description", "")),
+                   url=j.get("careers_url") or j.get("url") or "",
+                   published_at=j.get("published_at"))
+
+FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby, "workable": workable, "recruitee": recruitee}
 
 def normalize(source, job, now):
     title = clean(job["title"])
