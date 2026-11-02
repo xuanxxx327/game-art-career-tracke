@@ -305,6 +305,8 @@ def normalize(source, job, now):
     overseas = False if source.get("source") == "tencent_campus" else not bool(CHINA.search(location))
     eligibility = "needs_verification" if overseas else "check_job_requirements"
     eligibility_notes = ""
+    if source.get("source") == "tencent_campus":
+        eligibility_notes = ("腾讯官网标记为应届实习；需核对毕业届别，不能默认所有在校生均符合。" if track == "internship" else "腾讯官网标记为应届毕业生校招；请核对具体毕业届别和申请要求。")
     # Official Larian Ghent internship application currently limits candidates to
     # the Benelux, France and Germany region. Do not recommend it as broadly eligible.
     if source["name"] == "Larian Studios" and "55238820-92ef-4b4e-ba18-a9fdd027f737" in url:
