@@ -1,1 +1,118 @@
-{"checked_at":null,"source_success_count":0,"jobs":[],"diagnostics":[],"notes":"等待首次云端采集。数据只显示已明确标注实习或校招的美术岗位。"}
+{
+  "checked_at": "2026-11-02T16:38:45.644877+00:00",
+  "source_success_count": 4,
+  "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
+  "jobs": [
+    {
+      "id": "280d2d5d222ed89f27824d1f",
+      "company": "Larian Studios",
+      "group": "foreign_overseas",
+      "track": "internship",
+      "title": "Environment Artist - Internship",
+      "location": "Gent",
+      "employment_type": "Internship",
+      "department": "Environment Art",
+      "url": "https://jobs.lever.co/larian/55238820-92ef-4b4e-ba18-a9fdd027f737",
+      "published_at": null,
+      "first_seen": "2026-11-02T16:38:45.644877+00:00",
+      "last_seen": "2026-11-02T16:38:45.644877+00:00",
+      "status": "open",
+      "eligibility": "restricted_region",
+      "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
+      "description_excerpt": "With multiple awards to our name, Larian Studios has proven that we’re dedicated to delivering high-quality role-playing games. As we move on to new projects, the studio that brought you Baldur’s Gate 3 & Divinity: Original Sin 2 is looking for a Environment Artist intern to join the team and help us in crafting the high caliber games our fans have come to expect.",
+      "source_type": "lever",
+      "verified_as_intern_or_campus": true
+    }
+  ],
+  "diagnostics": [
+    {
+      "company": "Larian Studios",
+      "status": "ok",
+      "postings_scanned": 77,
+      "matching": 1
+    },
+    {
+      "company": "Keywords Studios",
+      "status": "ok",
+      "postings_scanned": 35,
+      "matching": 0
+    },
+    {
+      "company": "Nex",
+      "status": "ok",
+      "postings_scanned": 58,
+      "matching": 0
+    },
+    {
+      "company": "Xsolla",
+      "status": "ok",
+      "postings_scanned": 187,
+      "matching": 0
+    },
+    {
+      "company": "Riot Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Electronic Arts",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Virtuos",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Embark Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Tencent Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "NetEase Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "miHoYo",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Lilith Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Papergames",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Hypergryph",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Kuro Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Passtech / Pathea Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    }
+  ]
+}
