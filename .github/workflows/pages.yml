@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - index.html
+      - sources.json
+      - data/discovery_state.json
       - tests/**
       - data/jobs.json
       - .github/workflows/pages.yml
