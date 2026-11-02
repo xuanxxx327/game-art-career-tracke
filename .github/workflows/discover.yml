@@ -31,6 +31,12 @@ jobs:
         env:
           DISCOVERY_BATCH_SIZE: '85'
         run: python discover.py
+      - name: Save discovery verification report
+        uses: actions/upload-artifact@v4
+        with:
+          name: studio-source-verification
+          path: data/discovery_state.json
+          retention-days: 14
       - name: Save verified sources and discovery diagnostics
         run: |
           git config user.name "github-actions[bot]"
