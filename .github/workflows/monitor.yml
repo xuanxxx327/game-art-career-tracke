@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - monitor.py
+      - .github/workflows/monitor.yml
       - sources.json
       - requirements.txt
       - tests/**
