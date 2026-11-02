@@ -145,7 +145,71 @@ def recruitee(source):
                    url=j.get("careers_url") or j.get("url") or "",
                    published_at=j.get("published_at"))
 
-FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby, "workable": workable, "recruitee": recruitee}
+
+def riot(source):
+    """Official Riot public careers listing; extract only links to actual job detail pages."""
+    from html.parser import HTMLParser
+    from urllib.parse import urljoin
+    class LinkParser(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.active = False
+            self.depth = 0
+            self.href = ""
+            self.parts = []
+            self.jobs = []
+        def handle_starttag(self, tag, attrs):
+            attrs = dict(attrs)
+            if tag == "a" and not self.active:
+                href = attrs.get("href", "")
+                if re.search(r"/(?:en/)?(?:j/\\d+|work-with-us/job/\\d+)", href):
+                    self.active = True
+                    self.depth = 1
+                    self.href = urljoin("https://www.riotgames.com", href)
+                    self.parts = []
+                    return
+            if self.active:
+                self.depth += 1
+        def handle_endtag(self, tag):
+            if self.active:
+                self.depth -= 1
+                if self.depth == 0:
+                    if self.parts:
+                        self.jobs.append((self.href, self.parts[:]))
+                    self.active = False
+        def handle_data(self, data):
+            if self.active and data.strip():
+                self.parts.append(data.strip())
+    response = SESSION.get("https://www.riotgames.com/en/work-with-us", timeout=TIMEOUT)
+    response.raise_for_status()
+    parser = LinkParser()
+    parser.feed(response.text)
+    if not parser.jobs:
+        raise ValueError("Riot careers listing contained no job links")
+    unique = set()
+    for url, parts in parser.jobs:
+        if url in unique:
+            continue
+        unique.add(url)
+        # The first text segment is the visible title, later segments are office/craft.
+        title = clean(parts[0])
+        if not title:
+            continue
+        office = " ".join(parts[1:])
+        location = ""
+        for label in ("Shanghai, China", "Guangzhou, China", "Beijing, China",
+                      "Chengdu, China", "Singapore", "Los Angeles, USA",
+                      "Seattle, USA", "Sydney, Australia", "Dublin, Ireland",
+                      "Seoul, Korea", "Berlin, Germany", "Tokyo, Japan"):
+            if label.casefold() in office.casefold():
+                location = label
+                break
+        yield dict(source_id=url.rsplit("/", 1)[-1],
+                   title=title, location=location, department="",
+                   employment_type="", description="", url=url,
+                   published_at=None)
+
+FETCHERS = {"lever": lever, "smartrecruiters": smartrecruiters, "greenhouse": greenhouse, "ashby": ashby, "workable": workable, "recruitee": recruitee, "riot": riot}
 
 def normalize(source, job, now):
     title = clean(job["title"])
