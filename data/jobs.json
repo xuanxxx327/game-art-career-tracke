@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T16:49:15.014313+00:00",
+  "checked_at": "2026-11-02T16:51:02.124299+00:00",
   "source_success_count": 5,
   "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
   "jobs": [
@@ -15,7 +15,7 @@
       "url": "https://jobs.lever.co/larian/55238820-92ef-4b4e-ba18-a9fdd027f737",
       "published_at": null,
       "first_seen": "2026-11-02T16:38:45.644877+00:00",
-      "last_seen": "2026-11-02T16:49:15.014313+00:00",
+      "last_seen": "2026-11-02T16:51:02.124299+00:00",
       "status": "open",
       "eligibility": "restricted_region",
       "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
@@ -35,7 +35,7 @@
       "url": "https://api.smartrecruiters.com/v1/companies/ubisoft2/postings/744000155698619",
       "published_at": "2026-10-15T08:41:07.409Z",
       "first_seen": "2026-11-02T16:49:15.014313+00:00",
-      "last_seen": "2026-11-02T16:49:15.014313+00:00",
+      "last_seen": "2026-11-02T16:51:02.124299+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
@@ -132,6 +132,1096 @@
     },
     {
       "company": "Passtech / Pathea Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "叠纸游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "鹰角网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "库洛游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "散爆网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "沐瞳科技",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "心动网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "莉莉丝游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "米哈游",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯天美工作室群",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯光子工作室群",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯魔方工作室群",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯北极光工作室群",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易雷火",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易互娱",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易樱花工作室",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "完美世界游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "祖龙娱乐",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "巨人网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "盛趣游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "游族网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "三七互娱",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "吉比特",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "雷霆游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "中手游",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "西山居",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "剑心互娱",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "灵犀互娱",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "朝夕光年",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "儒意景秀",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "FunPlus",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "IGG",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "友塔游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "点点互动",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "江娱互动",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "柠檬微趣",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "乐元素",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "多益网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "4399游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "四三九九",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "恺英网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "世纪华通",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "冰川网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "电魂网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "掌趣科技",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "昆仑万维",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "创梦天地",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "中青宝",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "星辉娱乐",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "凯撒文化",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "宝通科技",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "神州泰岳",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "富春股份",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "汤姆猫游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "青瓷游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "百奥家庭互动",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "波克城市",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "竞技世界",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "英雄互娱",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "英雄游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "畅游",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "搜狐畅游",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "蜗牛游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "第七大道",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "天神娱乐",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "墨麟集团",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "诗悦网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "贪玩游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "途游游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "博乐科技",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "勇仕网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "蛮啾网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "深蓝互动",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "烛龙游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "上海软星",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "北京软星",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "汉家松鼠",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "帕斯亚科技",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "椰岛游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "胖布丁游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "钛核网络",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "灵游坊",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "游戏科学",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "凉屋游戏",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "迷雾侦探团队",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯NExT Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易24 Entertainment",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易Joker Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易Zen Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "网易Thunder Fire",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯TiMi Montreal",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Lightspeed LA",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Level Infinite",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯MoreFun Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Aurora Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Quantum Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Uncapped Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Saros Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯Team Kaiju",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯SIEG",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯IEG",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "腾讯海外发行",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "育碧成都",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "育碧上海",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "维塔士上海",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "维塔士成都",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "维塔士西安",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "EA Shanghai",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "拳头游戏上海",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Keywords Studios China",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PTW China",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Room 8 Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Sperasoft",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Winking Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Lakshya Digital",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "RedHot CG",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Virtuos Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Behaviour Interactive",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Digital Extremes",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Warframe Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Grinding Gear Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Pearl Abyss",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Nexon Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Nexon Korea",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Nexon America",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "NCSoft",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Krafton",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PUBG Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bluehole Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Smilegate RPG",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Shift Up",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Neowiz",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Netmarble",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Com2uS",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Kakao Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bandai Namco Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bandai Namco Online",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Sega",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Sega China",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Atlus",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Capcom",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Square Enix",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PlatinumGames",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Koei Tecmo",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Konami",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "FromSoftware",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "CyberConnect2",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Level-5",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Cygames",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "GungHo Online Entertainment",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Marvelous",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Spike Chunsoft",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Falcom",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Nihon Falcom",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Nintendo",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Monolith Soft",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Game Freak",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "The Pokémon Company",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PlayStation Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Insomniac Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Naughty Dog",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Sucker Punch Productions",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Guerrilla Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Housemarque",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bluepoint Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Santa Monica Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bend Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Media Molecule",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Firesprite",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Haven Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Bungie",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Respawn Entertainment",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "DICE",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Motive Studio",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "BioWare",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Criterion Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Codemasters",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Maxis",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "PopCap Games",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "EA Vancouver",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "EA Redwood Shores",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "EA Korea",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Arrowhead Game Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Avalanche Studios",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Massive Entertainment",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Montreal",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Toronto",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Singapore",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Annecy",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Montpellier",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Bordeaux",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Paris",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Berlin",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Mainz",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft RedLynx",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Reflections",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Sofia",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Bucharest",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Kyiv",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Milan",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Osaka",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Nagoya",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Philippines",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Pune",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Mumbai",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Abu Dhabi",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Quebec",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Sherbrooke",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Winnipeg",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Halifax",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Barcelona",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Belgrade",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Stockholm",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Helsinki",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Düsseldorf",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Nadeo",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Ivory Tower",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Chengdu",
+      "status": "not_integrated",
+      "reason": "Official careers API adapter still needed"
+    },
+    {
+      "company": "Ubisoft Shanghai",
       "status": "not_integrated",
       "reason": "Official careers API adapter still needed"
     }
