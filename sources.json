@@ -70,8 +70,8 @@
   {
     "name": "Tencent Games",
     "group": "domestic_major",
-    "source": "links",
-    "homepage": "https://join.qq.com/",
+    "source": "tencent_campus",
+    "homepage": "https://join.qq.com/post.html",
     "priority": 1
   },
   {
