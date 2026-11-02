@@ -118,13 +118,20 @@ def normalize(source, job, now):
     ident = job.get("source_id") or url
     key = hashlib.sha256((source["name"] + ":" + str(ident)).encode()).hexdigest()[:24]
     overseas = not CHINA.search(location)
+    eligibility = "needs_verification" if overseas else "check_job_requirements"
+    eligibility_notes = ""
+    # Official Larian Ghent internship application currently limits candidates to
+    # the Benelux, France and Germany region. Do not recommend it as broadly eligible.
+    if source["name"] == "Larian Studios" and "55238820-92ef-4b4e-ba18-a9fdd027f737" in url:
+        eligibility = "restricted_region"
+        eligibility_notes = "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。"
     return {
         "id": key, "company": source["name"], "group": source["group"],
         "track": track, "title": title, "location": location or "未注明",
         "employment_type": employment, "department": department,
         "url": url, "published_at": job.get("published_at"),
         "first_seen": now, "last_seen": now, "status": "open",
-        "eligibility": "needs_verification" if overseas else "check_job_requirements",
+        "eligibility": eligibility, "eligibility_notes": eligibility_notes,
         "description_excerpt": description[:900],
         "source_type": source["source"],
         "verified_as_intern_or_campus": True,
