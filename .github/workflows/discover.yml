@@ -2,7 +2,7 @@ name: Discover Official Game Studio Job Boards
 on:
   workflow_dispatch:
   schedule:
-    - cron: '47 2 * * *'
+    - cron: '47 */6 * * *'
   push:
     paths:
       - discover.py
@@ -29,7 +29,7 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verify company ATS links in rotating batch
         env:
-          DISCOVERY_BATCH_SIZE: '35'
+          DISCOVERY_BATCH_SIZE: '85'
         run: python discover.py
       - name: Save verified sources and discovery diagnostics
         run: |
