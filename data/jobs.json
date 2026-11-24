@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-23T09:10:19.034770+00:00",
+  "checked_at": "2026-11-24T00:24:16.979308+00:00",
   "source_success_count": 44,
   "notes": "Only titles explicitly labeled internship or graduate/campus are shown. Overseas eligibility requires manual verification. not_seen_latest_check is NOT confirmed closed.",
   "jobs": [
@@ -16,7 +16,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1282707391506654209",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届毕业生校招；请核对具体毕业届别和申请要求。",
@@ -37,7 +37,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1282707392714613761",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届毕业生校招；请核对具体毕业届别和申请要求。",
@@ -58,7 +58,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1283878428566955009",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届毕业生校招；请核对具体毕业届别和申请要求。",
@@ -79,7 +79,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1283878428562760704",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届毕业生校招；请核对具体毕业届别和申请要求。",
@@ -122,7 +122,7 @@
       "published_at": null,
       "first_seen": "2026-11-02T16:38:45.644877+00:00",
       "last_seen": "2026-11-23T09:10:19.034770+00:00",
-      "status": "open",
+      "status": "not_seen_latest_check",
       "eligibility": "restricted_region",
       "eligibility_notes": "官方申请表注明目前仅接受比荷卢、法国及德国地区候选人；须以最新表单为准。",
       "description_excerpt": "With multiple awards to our name, Larian Studios has proven that we’re dedicated to delivering high-quality role-playing games. As we move on to new projects, the studio that brought you Baldur’s Gate 3 & Divinity: Original Sin 2 is looking for a Environment Artist intern to join the team and help us in crafting the high caliber games our fans have come to expect.",
@@ -142,7 +142,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1219751779685005312",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届实习；需核对毕业届别，不能默认所有在校生均符合。",
@@ -163,7 +163,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1219751781299646464",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届实习；需核对毕业届别，不能默认所有在校生均符合。",
@@ -184,7 +184,7 @@
       "url": "https://join.qq.com/post_detail.html?postid=1219751794327154688",
       "published_at": null,
       "first_seen": "2026-11-02T17:09:35.977691+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "check_job_requirements",
       "eligibility_notes": "腾讯官网标记为应届实习；需核对毕业届别，不能默认所有在校生均符合。",
@@ -205,7 +205,7 @@
       "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000155698619",
       "published_at": "2026-10-15T08:41:07.409Z",
       "first_seen": "2026-11-02T16:49:15.014313+00:00",
-      "last_seen": "2026-11-23T09:10:19.034770+00:00",
+      "last_seen": "2026-11-24T00:24:16.979308+00:00",
       "status": "open",
       "eligibility": "needs_verification",
       "eligibility_notes": "",
@@ -218,8 +218,8 @@
     {
       "company": "Larian Studios",
       "status": "ok",
-      "postings_scanned": 69,
-      "matching": 1
+      "postings_scanned": 68,
+      "matching": 0
     },
     {
       "company": "Keywords Studios",
@@ -230,19 +230,19 @@
     {
       "company": "Nex",
       "status": "ok",
-      "postings_scanned": 59,
+      "postings_scanned": 60,
       "matching": 0
     },
     {
       "company": "Xsolla",
       "status": "ok",
-      "postings_scanned": 188,
+      "postings_scanned": 189,
       "matching": 0
     },
     {
       "company": "Riot Games",
       "status": "ok",
-      "postings_scanned": 201,
+      "postings_scanned": 200,
       "matching": 0
     },
     {
@@ -254,7 +254,7 @@
     {
       "company": "Ubisoft",
       "status": "ok",
-      "postings_scanned": 226,
+      "postings_scanned": 220,
       "matching": 1
     },
     {
@@ -869,7 +869,7 @@
     {
       "company": "Sperasoft",
       "status": "ok",
-      "postings_scanned": 54,
+      "postings_scanned": 50,
       "matching": 0
     },
     {
@@ -1114,7 +1114,7 @@
     {
       "company": "Insomniac Games",
       "status": "ok",
-      "postings_scanned": 7,
+      "postings_scanned": 6,
       "matching": 0
     },
     {
@@ -1431,13 +1431,13 @@
     {
       "company": "PlayStation Global",
       "status": "ok",
-      "postings_scanned": 215,
+      "postings_scanned": 209,
       "matching": 0
     },
     {
       "company": "Eleventh Hour Games",
       "status": "ok",
-      "postings_scanned": 2,
+      "postings_scanned": 1,
       "matching": 0
     },
     {
